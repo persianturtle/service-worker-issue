@@ -1,5 +1,5 @@
 const filesToCache = ["/", "/index.html"];
-const currentCacheName = "cache2";
+const currentCacheName = "cache1";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
