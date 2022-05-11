@@ -52,5 +52,28 @@
         }
       }
     </script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+
+      const app = initializeApp({
+        apiKey: "AIzaSyDxx2viLtxyDGWokR1ruUh9rT1aAitusIY",
+        authDomain: "kokorugs-rugapp-ef15a.firebaseapp.com",
+        projectId: "kokorugs-rugapp-ef15a",
+        storageBucket: "kokorugs-rugapp-ef15a.appspot.com",
+        messagingSenderId: "503873222732",
+        appId: "1:503873222732:web:c7156c53daabcc94a7dce9",
+        measurementId: "G-955G75Q4TJ",
+      });
+
+      import {
+        getFirestore,
+        onSnapshot,
+        doc,
+      } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
+
+      const db = getFirestore();
+
+      const unsubscribe = onSnapshot(doc(db, "customers", "1"), (doc) => {});
+    </script>
   </body>
 </html>

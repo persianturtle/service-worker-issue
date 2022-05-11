@@ -1,5 +1,5 @@
 const filesToCache = ["/", "/index.html"];
-const currentCacheName = "cache1";
+const currentCacheName = "cache2";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -8,6 +8,7 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+  console.log(event.request.url);
   if (new URL(event.request.url).origin !== location.origin) {
     return;
   }
