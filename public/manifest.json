@@ -1,0 +1,10 @@
+{
+  "name": "Test",
+  "short_name": "Test",
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "dodgerblue",
+  "background_color": "#fff",
+  "description": "Test",
+  "icons": []
+}

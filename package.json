@@ -1,0 +1,23 @@
+{
+  "name": "service-worker-issue",
+  "version": "1.0.0",
+  "description": "Reproducing a service worker related issue",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 --port 5050 public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/persianturtle/service-worker-issue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/persianturtle/service-worker-issue/issues"
+  },
+  "homepage": "https://github.com/persianturtle/service-worker-issue#readme",
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
+}
