@@ -1,10 +1,5 @@
 # Reproducing a Service Worker related issue
 
-This repo has two branches:
-
-- [main](https://github.com/persianturtle/service-worker-issue/tree/main) (works fine)
-- [not-working](https://github.com/persianturtle/service-worker-issue/tree/not-working) (does not work)
-
 The issue is that `self.skipWaiting()` seems to have no effect when Firebase's Firestore is being used.
 
 Steps to reproduce:
