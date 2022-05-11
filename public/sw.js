@@ -9,9 +9,9 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("fetch", (event) => {
   console.log(event.request.url);
-  if (new URL(event.request.url).origin !== location.origin) {
-    return;
-  }
+  // if (new URL(event.request.url).origin !== location.origin) {
+  //   return;
+  // }
 
   event.respondWith(
     caches
