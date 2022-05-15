@@ -1,6 +1,6 @@
 # Reproducing a Service Worker related issue
 
-The issue is that `self.skipWaiting()` seems to have no effect when Firebase's Firestore is being used.
+The issue is that `self.skipWaiting()` seems to have no effect when Firebase's Firestore is being used (on Chrome version 101.0.4951.54).
 
 Steps to reproduce:
 
